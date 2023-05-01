@@ -188,14 +188,14 @@ namespace MoarBloons
                     roundModel.AddBloonGroup(BloonType.Purple, 25, 0, 1000);
                     break;
                 case 37:
-                    roundModel.AddBloonGroup(BloonType.Rainbow, 35, 0, 1000)
+                    roundModel.AddBloonGroup(BloonType.Rainbow, 35, 0, 1000);
                     break;
                 case 38:
-                    roundModel.AddBloonGroup(BloonType.Red, 400, 200, 200)
+                    roundModel.AddBloonGroup(BloonType.Red, 400, 200, 200);
                     break;
                 case 39:
-                    roundModel.AddBloonGroup(BloonType.Moab, 1, 200, 201)
-                    roundModel.AddBloonGroup(BloonType.Moab, 1, 800, 801)
+                    roundModel.AddBloonGroup(BloonType.Moab, 1, 200, 201);
+                    roundModel.AddBloonGroup(BloonType.Moab, 1, 800, 801);
                     break;
             }
         }
