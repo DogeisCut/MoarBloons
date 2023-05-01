@@ -9,4 +9,8 @@ Adds a vareity of new bloons, including a custom modeled moab class bloon. Also 
 
 TODO: more info on each bloon
 
+<img align="left" alt="" height="90" src="Assets/Orange.png">
+<h1 align="center">Orange Bloon</h1>
+Immune to acid damage such as alchemist and corrosive glue! Goes faster when glued instead of slower!
+
 [![Requires BTD6 Mod Helper](https://raw.githubusercontent.com/gurrenm3/BTD-Mod-Helper/master/banner.png)](https://github.com/gurrenm3/BTD-Mod-Helper#readme)
