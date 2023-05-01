@@ -151,7 +151,47 @@ namespace MoarBloons
                     roundModel.AddBloonGroup<Grey>(30, 0, 1300);
                     break;
                 case 30:
-                    roundModel.AddBloonGroup<Lmao>(3600, 0, 1300);
+                    roundModel.AddBloonGroup(BloonType.Lead, 20, 500, 1300);
+                    roundModel.AddBloonGroup<GreyRegrow>(40, 0, 1300);
+                    break;
+                case 31:
+                    roundModel.AddBloonGroup(BloonType.PurpleRegrow, 40, 0, 333);
+                    roundModel.AddBloonGroup(BloonType.BlackRegrow, 40, 333, 666);
+                    roundModel.AddBloonGroup(BloonType.WhiteRegrow, 40, 666, 999);
+                    break;
+                case 32:
+                    roundModel.AddBloonGroup<PixelCamo>(10, 0, 600);
+                    roundModel.AddBloonGroup(BloonType.GreenCamo, 20, 0, 300);
+                    roundModel.AddBloonGroup(BloonType.BlueCamo, 40, 300, 900);
+                    roundModel.AddBloonGroup(BloonType.RedCamo, 60, 300, 900);
+                    break;
+                case 33:
+                    roundModel.AddBloonGroup<Orange>(150, 0, 1500);
+                    roundModel.AddBloonGroup<MosaicCamo>(30, 0, 1500);
+                    break;
+                case 34:
+                    roundModel.AddBloonGroup<OrangeCamo>(10, 0, 600);
+                    roundModel.AddBloonGroup(BloonType.Pink, 40, 0, 600);
+                    roundModel.AddBloonGroup(BloonType.Zebra, 20, 0, 600);
+                    roundModel.AddBloonGroup(BloonType.Rainbow, 8, 700, 1000);
+                    break;
+                case 35:
+                    roundModel.AddBloonGroup<Orange>(130, 0, 1000);
+                    roundModel.AddBloonGroup<OrangeRegrowCamo>(20, 0, 1000);
+                    break;
+                case 36:
+                    roundModel.AddBloonGroup<MosaicCamo>(15, 300, 1300);
+                    roundModel.AddBloonGroup<GreyCamo>(15, 100, 1100);
+                    roundModel.AddBloonGroup(BloonType.Lead, 15, 500, 1500);
+                    roundModel.AddBloonGroup(BloonType.Zebra, 15, 200, 1200);
+                    roundModel.AddBloonGroup(BloonType.Pink, 25, 400, 1400);
+                    roundModel.AddBloonGroup(BloonType.Purple, 25, 0, 1000);
+                    break;
+                case 37:
+                    break;
+                case 38:
+                    break;
+                case 39:
                     break;
                 case 40:
                     break;
