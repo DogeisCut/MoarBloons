@@ -39,4 +39,16 @@ Pops into 2 blues, 2 pinks, and 2 whites. Trans rights!
 Esentially an early ceramic, takes 2 hits before it pops into a pixel bloon.
 </p>
 
+<p>
+<img align="left" alt="" height="90" src="Assets/Lmao.png">
+<h3 align="center">LMAO Bloon</h3>
+A MOAB class bloon with double the HP of a MOAB. It also has purple and zebra properties! Pops into several things I can't remember right now.
+</p>
+
+<p>
+<img align="left" alt="" height="90" src="Assets/Troll.png">
+<h3 align="center">????? Bloon</h3>
+????????????? ???? ??? ?????? ?? ???????
+</p>
+
 [![Requires BTD6 Mod Helper](https://raw.githubusercontent.com/gurrenm3/BTD-Mod-Helper/master/banner.png)](https://github.com/gurrenm3/BTD-Mod-Helper#readme)
