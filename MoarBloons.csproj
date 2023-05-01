@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>MoarBloons</RootNamespace>
+        <Configurations>Debug;Release</Configurations>
+        <Nullable>enable</Nullable>
+        <AssemblyName>MoarBloons</AssemblyName>
+        <LangVersion>latest</LangVersion>
+        <Optimize>False</Optimize>
+        <DebugType>embedded</DebugType>
+    </PropertyGroup>
+
+    <Import Project="..\btd6.targets" />
+
+    <ItemGroup>
+      <None Remove="Assets\LmaoStandardDiffuse.png" />
+      <None Remove="Assets\Moar.png" />
+      <None Remove="Assets\moarbloons" />
+      <None Remove="Assets\Mosaic.png" />
+      <None Remove="Assets\MosaicCamo.png" />
+      <None Remove="Assets\MosaicRegrow.png" />
+      <None Remove="Assets\MosaicRegrowCamo.png" />
+    </ItemGroup>
+</Project>
