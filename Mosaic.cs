@@ -70,19 +70,81 @@ namespace MoarBloons
         }
     }
 
-    public class MosaicRegrowCamo : ModBloon<Mosaic>
+    public class MosaicCamoRegrow : ModBloon<Mosaic>
     {
         public override bool Regrow => true;
         public override bool Camo => true;
 
-        public override IEnumerable<string> DamageStates => new List<string> { "MosaicRegrowCamo1" };
+        public override IEnumerable<string> DamageStates => new List<string> { "MosaicCamoRegrow1" };
 
         public override void ModifyBaseBloonModel(BloonModel bloonModel)
         {
             bloonModel.overlayClass = BloonOverlayClass.BlueRegrow;
 
             bloonModel.RemoveAllChildren();
-            bloonModel.AddToChildren<PixelRegrowCamo>();
+            bloonModel.AddToChildren<PixelCamoRegrow>();
+            bloonModel.GetBehavior<GrowModel>().overrideChildWithColor = BloonType.Green;
+        }
+    }
+
+    public class MosaicFortified : ModBloon<Mosaic>
+    {
+        public override bool Fortified => true;
+        public override IEnumerable<string> DamageStates => new List<string> { "MosaicFortified1" };
+
+        public override void ModifyBaseBloonModel(BloonModel bloonModel)
+        {
+            bloonModel.overlayClass = BloonOverlayClass.Blue;
+        }
+    }
+
+    public class MosaicRegrowFortified : ModBloon<Mosaic>
+    {
+        public override bool Regrow => true;
+        public override bool Fortified => true;
+
+        public override IEnumerable<string> DamageStates => new List<string> { "MosaicRegrowFortified1" };
+
+        public override void ModifyBaseBloonModel(BloonModel bloonModel)
+        {
+            bloonModel.overlayClass = BloonOverlayClass.BlueRegrow;
+
+            bloonModel.RemoveAllChildren();
+            bloonModel.AddToChildren<PixelRegrow>();
+            bloonModel.GetBehavior<GrowModel>().overrideChildWithColor = BloonType.Green;
+        }
+    }
+
+    public class MosaicCamoFortified : ModBloon<Mosaic>
+    {
+        public override bool Camo => true;
+        public override bool Fortified => true;
+
+        public override IEnumerable<string> DamageStates => new List<string> { "MosaicCamoFortified1" };
+
+        public override void ModifyBaseBloonModel(BloonModel bloonModel)
+        {
+            bloonModel.overlayClass = BloonOverlayClass.Blue;
+
+            bloonModel.RemoveAllChildren();
+            bloonModel.AddToChildren<PixelCamo>();
+        }
+    }
+
+    public class MosaicCamoRegrowFortified : ModBloon<Mosaic>
+    {
+        public override bool Regrow => true;
+        public override bool Camo => true;
+        public override bool Fortified => true;
+
+        public override IEnumerable<string> DamageStates => new List<string> { "MosaicCamoRegrowFortified1" };
+
+        public override void ModifyBaseBloonModel(BloonModel bloonModel)
+        {
+            bloonModel.overlayClass = BloonOverlayClass.BlueRegrow;
+
+            bloonModel.RemoveAllChildren();
+            bloonModel.AddToChildren<PixelCamoRegrow>();
             bloonModel.GetBehavior<GrowModel>().overrideChildWithColor = BloonType.Green;
         }
     }

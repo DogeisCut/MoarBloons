@@ -58,7 +58,7 @@ namespace MoarBloons
         }
     }
 
-    public class PixelRegrowCamo : ModBloon<Pixel>
+    public class PixelCamoRegrow : ModBloon<Pixel>
     {
         public override bool Regrow => true;
         public override bool Camo => true;

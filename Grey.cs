@@ -56,7 +56,7 @@ namespace MoarBloons
         }
     }
 
-    public class GreyRegrowCamo : ModBloon<Grey>
+    public class GreyCamoRegrow : ModBloon<Grey>
     {
         public override bool Regrow => true;
         public override bool Camo => true;

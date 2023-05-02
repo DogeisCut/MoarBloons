@@ -19,6 +19,7 @@
       <None Remove="Assets\Mosaic.png" />
       <None Remove="Assets\MosaicCamo.png" />
       <None Remove="Assets\MosaicRegrow.png" />
-      <None Remove="Assets\MosaicRegrowCamo.png" />
+      <None Remove="Assets\MosaicCamoRegrow.png" />
+      <None Remove="Bundles\moarbloons.bundle" />
     </ItemGroup>
 </Project>

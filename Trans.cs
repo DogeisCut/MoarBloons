@@ -60,7 +60,7 @@ namespace MoarBloons
         }
     }
 
-    public class TransRegrowCamo : ModBloon<Trans>
+    public class TransCamoRegrow : ModBloon<Trans>
     {
         public override bool Regrow => true;
         public override bool Camo => true;

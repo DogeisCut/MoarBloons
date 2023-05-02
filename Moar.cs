@@ -177,7 +177,7 @@ namespace MoarBloons
                     break;
                 case 35:
                     roundModel.AddBloonGroup<Orange>(130, 0, 1000);
-                    roundModel.AddBloonGroup<OrangeRegrowCamo>(20, 0, 1000);
+                    roundModel.AddBloonGroup<OrangeCamoRegrow>(20, 0, 1000);
                     break;
                 case 36:
                     roundModel.AddBloonGroup<MosaicCamo>(15, 300, 1300);
@@ -189,9 +189,11 @@ namespace MoarBloons
                     break;
                 case 37:
                     roundModel.AddBloonGroup(BloonType.Rainbow, 35, 0, 1000);
+                    roundModel.AddBloonGroup(BloonType.Ceramic, 5, 900, 1000);
                     break;
                 case 38:
-                    roundModel.AddBloonGroup(BloonType.Red, 400, 200, 200);
+                    roundModel.AddBloonGroup(BloonType.Ceramic, 19, 0, 1000);
+                    roundModel.AddBloonGroup(BloonType.Red, 500, 1000, 1000);
                     break;
                 case 39:
                     roundModel.AddBloonGroup(BloonType.Moab, 1, 200, 201);

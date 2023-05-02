@@ -4,7 +4,9 @@ using BTD_Mod_Helper.Api.Display;
 using BTD_Mod_Helper.Api.Enums;
 using BTD_Mod_Helper.Extensions;
 using Il2CppAssets.Scripts.Models.Bloons;
+using Il2CppAssets.Scripts.Models.GenericBehaviors;
 using Il2CppAssets.Scripts.Unity.Display;
+using MoarBloons.Displays;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -65,40 +67,4 @@ namespace MoarBloons
         }
     }
 
-    public class LmaoDisplay : ModBloonDisplay<Lmao>
-    {
-        public override string BaseDisplay => GetBloonDisplay(BloonType.Moab, Damage);
-
-        public override string Name => "Assets/Lmao"; //+ Damage;
-
-        /// <summary>
-        /// Still need an empty constructor for the type to be loaded
-        /// </summary>
-        public LmaoDisplay()
-        {
-        }
-
-        public override int Damage { get; }
-
-        public LmaoDisplay(int damage)
-        {
-            Damage = damage;
-        }
-
-        public override IEnumerable<ModContent> Load()
-        {
-            for (var damage = 0; damage < 5; damage++)
-            {
-                yield return new LmaoDisplay(damage);
-            }
-        }
-
-        public override void ModifyDisplayNode(UnityDisplayNode node)
-        {
-            foreach (var meshRenderer in node.GetMeshRenderers())
-            {
-                meshRenderer.SetMainTexture(GetTexture(Name)!);
-            }
-        }
-    }
 }

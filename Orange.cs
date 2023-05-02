@@ -63,7 +63,7 @@ namespace MoarBloons
         }
     }
 
-    public class OrangeRegrowCamo : ModBloon<Orange>
+    public class OrangeCamoRegrow : ModBloon<Orange>
     {
         public override bool Regrow => true;
         public override bool Camo => true;
