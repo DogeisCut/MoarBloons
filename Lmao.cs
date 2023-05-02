@@ -6,6 +6,7 @@ using BTD_Mod_Helper.Extensions;
 using Il2CppAssets.Scripts.Models.Bloons;
 using Il2CppAssets.Scripts.Models.GenericBehaviors;
 using Il2CppAssets.Scripts.Unity.Display;
+using Il2CppAssets.Scripts.Utils;
 using MoarBloons.Displays;
 using System;
 using System.Collections.Generic;
@@ -51,6 +52,8 @@ namespace MoarBloons
             bloonModel.AddToChildren<GreyRegrow>();
 
             bloonModel.bloonProperties = Il2Cpp.BloonProperties.Black | Il2Cpp.BloonProperties.White | Il2Cpp.BloonProperties.Purple;
+
+            bloonModel.ApplyDisplay<LmaoBloon>();
         }
     }
 
@@ -66,5 +69,4 @@ namespace MoarBloons
             bloonModel.MakeChildrenFortified();
         }
     }
-
 }
