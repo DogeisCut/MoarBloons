@@ -40,6 +40,12 @@ TODO: more info on each bloon
 </p><br>
 
 <p>
+    <img align="left" alt="" height="90" src="Assets/Obsidian.png"><br>
+    <h3 align="center">Obsidian Bloon</h3>
+    Has lead, purple, and black properties!
+</p><br>
+
+<p>
     <img align="left" alt="" height="90" src="Assets/Lmao.png"><br>
     <h3 align="center">LMAO Bloon</h3>
     A MOAB class bloon with double the HP of a MOAB. It also has purple and zebra properties! Pops into several things I can't remember right now.
