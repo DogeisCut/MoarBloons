@@ -63,10 +63,10 @@ namespace MoarBloons
                     roundModel.AddBloonGroup(BloonType.Blue, 20, 300, 900);
                     break;
                 case 10:
-                    roundModel.AddBloonGroup(BloonType.Yellow, 20, 0, 3000);
-                    roundModel.AddBloonGroup(BloonType.Green, 20, 0, 3000);
-                    roundModel.AddBloonGroup(BloonType.Blue, 20, 0, 3000);
-                    roundModel.AddBloonGroup(BloonType.Red, 20, 0, 3000);
+                    roundModel.AddBloonGroup(BloonType.Yellow, 50, 0, 3000);
+                    roundModel.AddBloonGroup(BloonType.Green, 50, 0, 3000);
+                    roundModel.AddBloonGroup(BloonType.Blue, 50, 0, 3000);
+                    roundModel.AddBloonGroup(BloonType.Red, 50, 0, 3000);
                     break;
                 case 11:
                     roundModel.AddBloonGroup(BloonType.Yellow, 40, 0, 333);
@@ -221,13 +221,13 @@ namespace MoarBloons
                 case 43:
                     roundModel.AddBloonGroup(BloonType.PurpleRegrowCamo, 32, 0, 1000);
                     roundModel.AddBloonGroup(BloonType.Ceramic, 5, 0, 1000);
-                    roundModel.AddBloonGroup<OrangeCamoRegrow>(12, 0, 1000);
+                    roundModel.AddBloonGroup<Obsidian>(12, 0, 1000);
                     roundModel.AddBloonGroup<GreyCamoRegrow>(25, 0, 1000);
                     roundModel.AddBloonGroup<Cash>(2, 1100, 1100);
                     break;
                 case 44:
                     roundModel.AddBloonGroup<OrangeCamoRegrow>(25, 0, 1000);
-                    roundModel.AddBloonGroup<GreyCamoRegrow>(50, 0, 1000);
+                    roundModel.AddBloonGroup<Obsidian>(50, 0, 1000);
                     roundModel.AddBloonGroup<Cash>(3, 0, 1000);
                     break;
                 case 45:
@@ -266,7 +266,22 @@ namespace MoarBloons
                     roundModel.AddBloonGroup(BloonType.PurpleRegrow, 37-5, 0, 1000);
                     roundModel.AddBloonGroup(BloonType.CeramicFortified, 10, 0, 1000);
                     break;
+                case 51:
+                    roundModel.AddBloonGroup(BloonType.Moab, 6, 0, 800);
+                    //need some regular bloons here
+                    break;
+                case 52:
+                    roundModel.AddBloonGroup(BloonType.Moab, 8, 0, 600);
+                    //need some regular bloons here
+                    break;
+                case 53:
+                    roundModel.AddBloonGroup(BloonType.Moab, 5, 0, 1000);
+                    roundModel.AddBloonGroup(BloonType.Moab, 5, 100, 1100);
+                    //need some regular bloons here
+                    break;
                 case 59:
+                    roundModel.AddBloonGroup(BloonType.Bfb, 1, 200, 201);
+                    roundModel.AddBloonGroup(BloonType.Bfb, 1, 800, 801);
                     break;
             }
         }
