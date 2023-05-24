@@ -218,8 +218,53 @@ namespace MoarBloons
                     roundModel.AddBloonGroup(BloonType.Ceramic, 10, 0, 1000);
                     roundModel.AddBloonGroup<Cash>(1, 1100, 1100);
                     break;
+                case 43:
+                    roundModel.AddBloonGroup(BloonType.PurpleRegrowCamo, 32, 0, 1000);
+                    roundModel.AddBloonGroup(BloonType.Ceramic, 5, 0, 1000);
+                    roundModel.AddBloonGroup<OrangeCamoRegrow>(12, 0, 1000);
+                    roundModel.AddBloonGroup<GreyCamoRegrow>(25, 0, 1000);
+                    roundModel.AddBloonGroup<Cash>(2, 1100, 1100);
+                    break;
+                case 44:
+                    roundModel.AddBloonGroup<OrangeCamoRegrow>(25, 0, 1000);
+                    roundModel.AddBloonGroup<GreyCamoRegrow>(50, 0, 1000);
+                    roundModel.AddBloonGroup<Cash>(3, 0, 1000);
+                    break;
+                case 45:
+                    roundModel.AddBloonGroup(BloonType.ZebraRegrow, 42, 0, 1000);
+                    roundModel.AddBloonGroup(BloonType.PurpleRegrow, 37, 0, 1000);
+                    roundModel.AddBloonGroup(BloonType.CeramicFortified, 5, 0, 1000);
+                    roundModel.AddBloonGroup<Cash>(4, 0, 1000);
+                    break;
+                case 46:
+                    roundModel.AddBloonGroup(BloonType.ZebraRegrowCamo, 32, 0, 1000);
+                    roundModel.AddBloonGroup(BloonType.PurpleRegrowCamo, 27, 0, 1000);
+                    roundModel.AddBloonGroup<MosaicFortified>(24, 0, 1000);
+                    roundModel.AddBloonGroup<Cash>(5, 0, 1000);
+                    break;
+                case 47:
+                    roundModel.AddBloonGroup(BloonType.ZebraRegrowCamo, 27, 0, 1000);
+                    roundModel.AddBloonGroup(BloonType.PurpleRegrowCamo, 11, 0, 1000);
+                    roundModel.AddBloonGroup(BloonType.CeramicRegrowCamo, 7, 0, 1000);
+                    roundModel.AddBloonGroup<Cash>(8, 0, 1000);
+                    break;
+                case 48:
+                    roundModel.AddBloonGroup<OrangeCamoRegrow>(48, 0, 1000);
+                    roundModel.AddBloonGroup(BloonType.ZebraRegrowCamo, 32, 0, 1000);
+                    roundModel.AddBloonGroup<MosaicCamoRegrow>(24, 0, 1000);
+                    roundModel.AddBloonGroup(BloonType.PurpleRegrowCamo, 16, 0, 1000);
+                    roundModel.AddBloonGroup(BloonType.CeramicRegrowCamo, 12, 0, 1000);
+                    roundModel.AddBloonGroup<Cash>(10, 0, 1000);
+                    break;
                 case 49:
                     roundModel.AddBloonGroup<Lmao>(1, 200, 201);
+                    roundModel.AddBloonGroup(BloonType.MoabFortified, 1, 800, 801);
+                    break;
+                case 50:
+                    roundModel.AddBloonGroup(BloonType.Moab, 4, 0, 1000);
+                    roundModel.AddBloonGroup(BloonType.ZebraRegrow, 42-5, 0, 1000);
+                    roundModel.AddBloonGroup(BloonType.PurpleRegrow, 37-5, 0, 1000);
+                    roundModel.AddBloonGroup(BloonType.CeramicFortified, 10, 0, 1000);
                     break;
                 case 59:
                     break;
