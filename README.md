@@ -46,6 +46,12 @@ TODO: more info on each bloon
 </p><br>
 
 <p>
+    <img align="left" alt="" height="90" src="Assets/Cash.png"><br>
+    <h3 align="center">Cash Bloon</h3>
+    A harmless bloon that pops into 100 cash instead of 1!
+</p><br>
+
+<p>
     <img align="left" alt="" height="90" src="Assets/Lmao.png"><br>
     <h3 align="center">LMAO Bloon</h3>
     A MOAB class bloon with double the HP of a MOAB. It also has purple and zebra properties! Pops into several things I can't remember right now.
