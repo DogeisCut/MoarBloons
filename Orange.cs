@@ -5,6 +5,7 @@ using BTD_Mod_Helper.Api.Enums;
 using BTD_Mod_Helper.Extensions;
 using Il2Cpp;
 using Il2CppAssets.Scripts.Models.Bloons;
+using Il2CppAssets.Scripts.Simulation.Bloons;
 using Il2CppAssets.Scripts.Unity.Display;
 using System;
 using System.Collections.Generic;
@@ -14,7 +15,6 @@ using System.Threading.Tasks;
 
 namespace MoarBloons
 {
-    //every single bloon is rotated to face up for some reason, making them look squished. :(
     //orange bloon should be immune to acid attacks (glue and alchemist)
     //Should also get faster when glued instead of slowed
     public class Orange : ModBloon

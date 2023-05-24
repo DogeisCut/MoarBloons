@@ -50,6 +50,10 @@ namespace MoarBloons
             bloonModel.AddToChildren(BloonType.ZebraRegrow);
             bloonModel.AddToChildren<GreyRegrow>();
             bloonModel.AddToChildren<GreyRegrow>();
+            bloonModel.AddToChildren<ObsidianRegrow>();
+            bloonModel.AddToChildren<ObsidianRegrow>();
+            bloonModel.AddToChildren<ObsidianRegrow>();
+            bloonModel.AddToChildren<ObsidianRegrow>();
 
             bloonModel.bloonProperties = Il2Cpp.BloonProperties.Black | Il2Cpp.BloonProperties.White | Il2Cpp.BloonProperties.Purple;
 
@@ -66,7 +70,23 @@ namespace MoarBloons
             bloonModel.maxHealth *= 2;
             bloonModel.leakDamage *= 2;
 
-            bloonModel.MakeChildrenFortified();
+            bloonModel.RemoveAllChildren();
+            bloonModel.AddToChildren(BloonType.PurpleRegrow);
+            bloonModel.AddToChildren(BloonType.PurpleRegrow);
+            bloonModel.AddToChildren(BloonType.ZebraRegrow);
+            bloonModel.AddToChildren(BloonType.ZebraRegrow);
+            bloonModel.AddToChildren<GreyRegrow>();
+            bloonModel.AddToChildren<GreyRegrow>();
+            bloonModel.AddToChildren(BloonType.PurpleRegrow);
+            bloonModel.AddToChildren(BloonType.PurpleRegrow);
+            bloonModel.AddToChildren(BloonType.ZebraRegrow);
+            bloonModel.AddToChildren(BloonType.ZebraRegrow);
+            bloonModel.AddToChildren<GreyRegrow>();
+            bloonModel.AddToChildren<GreyRegrow>();
+            bloonModel.AddToChildren<ObsidianRegrowFortified>();
+            bloonModel.AddToChildren<ObsidianRegrowFortified>();
+            bloonModel.AddToChildren<ObsidianRegrowFortified>();
+            bloonModel.AddToChildren<ObsidianRegrowFortified>();
         }
     }
 }

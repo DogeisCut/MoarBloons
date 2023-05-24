@@ -6,6 +6,12 @@ using Il2CppAssets.Scripts.Unity.Display;
 using UnityEngine;
 using BTD_Mod_Helper.Extensions;
 using Il2CppSystem.IO;
+using Il2CppAssets.Scripts.Simulation.Bloons.Behaviors;
+using Il2CppAssets.Scripts.Models.Bloons.Behaviors;
+using System;
+using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
+using Il2CppAssets.Scripts.Models;
+using Il2CppAssets.Scripts.Simulation.Bloons;
 
 [assembly: MelonInfo(typeof(MoarBloons.MoarBloons), ModHelperData.Name, ModHelperData.Version, ModHelperData.RepoOwner)]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
@@ -28,7 +34,7 @@ public class MoarBloons : BloonsTD6Mod
         return litOutlineShader;
     }
 
-    public static Object? GetVanillaAsset(string name)
+    public static UnityEngine.Object? GetVanillaAsset(string name)
     {
         foreach (var assetBundle in AssetBundle.GetAllLoadedAssetBundles().ToArray())
         {
@@ -39,4 +45,14 @@ public class MoarBloons : BloonsTD6Mod
         }
         return null;
     }
+
+    //[HarmonyLib.HarmonyPatch(typeof(SlowModel.SlowMutator), "Mutate")]
+    //class SlowBloon_Patch
+    //{
+    //    [HarmonyLib.HarmonyPrefix]
+    //    internal static bool Prefix(Model baseModel, Model model)
+    //    {
+    //        return false;
+    //    }
+    //}
 }

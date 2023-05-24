@@ -201,6 +201,30 @@ namespace MoarBloons
                     break;
             }
         }
+        public override void ModifyMediumRoundModels(RoundModel roundModel, int round)
+        {
+            switch (round)
+            {
+                case 40:
+                    roundModel.AddBloonGroup<Grey>(40, 300, 900);
+                    roundModel.AddBloonGroup(BloonType.Zebra, 60, 300, 900);
+                    break;
+                case 41:
+                    roundModel.AddBloonGroup(BloonType.RainbowRegrow, 15, 0, 500);
+                    roundModel.AddBloonGroup(BloonType.RainbowCamo, 15, 250, 500);
+                    break;
+                case 42:
+                    roundModel.AddBloonGroup(BloonType.PurpleRegrowCamo, 65, 0, 1000);
+                    roundModel.AddBloonGroup(BloonType.Ceramic, 10, 0, 1000);
+                    roundModel.AddBloonGroup<Cash>(1, 1100, 1100);
+                    break;
+                case 49:
+                    roundModel.AddBloonGroup<Lmao>(1, 200, 201);
+                    break;
+                case 59:
+                    break;
+            }
+        }
         public override string GetHint(int round)
         {
             switch (round) { 

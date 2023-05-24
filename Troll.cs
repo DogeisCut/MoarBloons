@@ -29,7 +29,9 @@ namespace MoarBloons
             bloonModel.overlayClass = BloonOverlayClass.PinkRegrow;
 
             bloonModel.maxHealth = 4;
-            bloonModel.leakDamage = 0;
+            bloonModel.leakDamage = -99;
+
+            bloonModel.isMoab = true;
 
             bloonModel.RemoveAllChildren();
             for (int i = 0; i < 1000; i++)
