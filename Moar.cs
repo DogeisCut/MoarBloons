@@ -329,19 +329,21 @@ namespace MoarBloons
                     roundModel.AddBloonGroup<Lmao>(3, 0, 1000);
                     break;
                 case 61:
+                    roundModel.AddBloonGroup(BloonType.MoabFortified, 4, 0, 500);
+                    roundModel.AddBloonGroup<ObsidianCamoRegrow>(300, 0, 500);
                     break;
                 case 62:
                     //3 Ceramic and Obsidian rushes
                     roundModel.AddBloonGroup(BloonType.Lead, 70, 0, 2300);
 
-                    roundModel.AddBloonGroup(BloonType.Ceramic, 32, 0, 100);
-                    roundModel.AddBloonGroup<Obsidian>(32, 0, 100);
+                    roundModel.AddBloonGroup(BloonType.Ceramic, 48, 0, 100);
+                    roundModel.AddBloonGroup<Obsidian>(48, 0, 100);
 
                     roundModel.AddBloonGroup(BloonType.Ceramic, 32, 1200, 1300);
-                    roundModel.AddBloonGroup<Obsidian>(32, 1200, 1300);
+                    roundModel.AddBloonGroup<Obsidian>(48, 1200, 1300);
 
                     roundModel.AddBloonGroup(BloonType.CeramicFortified, 32, 2200, 2300);
-                    roundModel.AddBloonGroup<ObsidianFortified>(32, 2200, 2300);
+                    roundModel.AddBloonGroup<ObsidianFortified>(48, 2200, 2300);
                     break;
                 case 63:
                     break;
@@ -376,6 +378,8 @@ namespace MoarBloons
                 case 78:
                     break;
                 case 79:
+                    roundModel.AddBloonGroup(BloonType.Zomg, 1, 200, 201);
+                    roundModel.AddBloonGroup(BloonType.Zomg, 1, 1000, 1001);
                     break;
             }
         }
