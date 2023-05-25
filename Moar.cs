@@ -376,7 +376,7 @@ namespace MoarBloons
                 case 77:
                     break;
                 case 78:
-                    break;
+                    break; 
                 case 79:
                     roundModel.AddBloonGroup(BloonType.Zomg, 1, 200, 201);
                     roundModel.AddBloonGroup(BloonType.Zomg, 1, 1000, 1001);
@@ -447,7 +447,7 @@ namespace MoarBloons
                     break;
                 case 99:
                     roundModel.AddBloonGroup(BloonType.Bad, 1, 200, 201);
-                    roundModel.AddBloonGroup(BloonType.Bad, 1, 800, 801);
+                    roundModel.AddBloonGroup(BloonType.Bad, 1, 1500, 1501);
                     break;
             }
         }
