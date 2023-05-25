@@ -27,6 +27,8 @@ namespace MoarBloons
         public override string DisplayName => "LMAO";
         public override string DisplayNamePlural => "LMAOs";
 
+        public override IEnumerable<string> DamageStates => new List<string> { };
+
         public override void ModifyBaseBloonModel(BloonModel bloonModel)
         {
             bloonModel.speed *= 1.2f;
@@ -87,6 +89,8 @@ namespace MoarBloons
             bloonModel.AddToChildren<ObsidianRegrowFortified>();
             bloonModel.AddToChildren<ObsidianRegrowFortified>();
             bloonModel.AddToChildren<ObsidianRegrowFortified>();
+
+            bloonModel.ApplyDisplay<LmaoBloon>();
         }
     }
 }

@@ -92,9 +92,13 @@ namespace MoarBloons
         public override bool Fortified => true;
         public override IEnumerable<string> DamageStates => new List<string> { "MosaicFortified1" };
 
+
         public override void ModifyBaseBloonModel(BloonModel bloonModel)
         {
             bloonModel.overlayClass = BloonOverlayClass.Blue;
+
+            bloonModel.maxHealth *= 2;
+            bloonModel.leakDamage *= 2;
         }
     }
 
@@ -112,6 +116,9 @@ namespace MoarBloons
             bloonModel.RemoveAllChildren();
             bloonModel.AddToChildren<PixelRegrow>();
             bloonModel.GetBehavior<GrowModel>().overrideChildWithColor = BloonType.Green;
+
+            bloonModel.maxHealth *= 2;
+            bloonModel.leakDamage *= 2;
         }
     }
 
@@ -128,6 +135,9 @@ namespace MoarBloons
 
             bloonModel.RemoveAllChildren();
             bloonModel.AddToChildren<PixelCamo>();
+
+            bloonModel.maxHealth *= 2;
+            bloonModel.leakDamage *= 2;
         }
     }
 
@@ -146,6 +156,9 @@ namespace MoarBloons
             bloonModel.RemoveAllChildren();
             bloonModel.AddToChildren<PixelCamoRegrow>();
             bloonModel.GetBehavior<GrowModel>().overrideChildWithColor = BloonType.Green;
+
+            bloonModel.maxHealth *= 2;
+            bloonModel.leakDamage *= 2;
         }
     }
     //public class MosaicDisplay : ModBloonDisplay<Mosaic>

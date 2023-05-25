@@ -13,7 +13,7 @@ namespace MoarBloons
 {
     internal class MoarRounds : ModGameMode
     {
-        public override string Difficulty => DifficultyType.Easy;
+        public override string Difficulty => DifficultyType.Hard;
 
         public override string BaseGameMode => GameModeType.None;
 

@@ -81,6 +81,9 @@ namespace MoarBloons
             bloonModel.overlayClass = BloonOverlayClass.Pink;
 
             bloonModel.MakeChildrenFortified();
+
+            bloonModel.maxHealth *= 2;
+            bloonModel.leakDamage *= 2;
         }
     }
 
@@ -95,6 +98,9 @@ namespace MoarBloons
 
             bloonModel.MakeChildrenRegrow();
             bloonModel.MakeChildrenFortified();
+
+            bloonModel.maxHealth *= 2;
+            bloonModel.leakDamage *= 2;
         }
     }
 
@@ -109,6 +115,9 @@ namespace MoarBloons
 
             bloonModel.MakeChildrenCamo();
             bloonModel.MakeChildrenFortified();
+
+            bloonModel.maxHealth *= 2;
+            bloonModel.leakDamage *= 2;
         }
     }
 
@@ -125,6 +134,9 @@ namespace MoarBloons
             bloonModel.MakeChildrenCamo();
             bloonModel.MakeChildrenRegrow();
             bloonModel.MakeChildrenFortified();
+
+            bloonModel.maxHealth *= 2;
+            bloonModel.leakDamage *= 2;
         }
     }
 }
