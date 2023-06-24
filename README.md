@@ -7,7 +7,7 @@
 
 Adds a variety of new bloons, including a custom modeled moab class bloon. Also adds custom rounds and a gamemode to play with these new bloons!
 
-As of now, the mod is in public beta, version 0.5.0. This means that the rounds only go up to 60 before freeplay, the LMAO bloon is missing damage models and fortify models, and some bloons may not have their planned properties yet (such as the orange bloon).
+As of now, the mod is in public beta, version 0.5.0. This means that the rounds only go up to 60 before freeplay, the LMAO bloon is missing damage models and fortify models as well as a proper icon, and some bloons may not have their planned properties yet (such as the orange bloon).
 Hopefully future testing and learning will help me complete this mod.
 
 <p>
