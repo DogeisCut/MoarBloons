@@ -17,7 +17,7 @@ namespace MoarBloons
     {
         public override string BaseRoundSet => RoundSetType.Empty;
 
-        public override int DefinedRounds => 100;
+        public override int DefinedRounds => 60;
 
         public override string DisplayName => "Moar";
 
@@ -330,24 +330,29 @@ namespace MoarBloons
                     break;
                 case 61:
                     roundModel.AddBloonGroup(BloonType.MoabFortified, 4, 0, 500);
-                    roundModel.AddBloonGroup<ObsidianCamoRegrow>(300, 0, 500);
+                    roundModel.AddBloonGroup<ObsidianCamoRegrow>(30, 0, 500);
                     break;
                 case 62:
                     //3 Ceramic and Obsidian rushes
                     roundModel.AddBloonGroup(BloonType.Lead, 70, 0, 2300);
 
                     roundModel.AddBloonGroup(BloonType.Ceramic, 48, 0, 100);
-                    roundModel.AddBloonGroup<Obsidian>(48, 0, 100);
+                    roundModel.AddBloonGroup<Obsidian>(64, 0, 100);
 
                     roundModel.AddBloonGroup(BloonType.Ceramic, 32, 1200, 1300);
-                    roundModel.AddBloonGroup<Obsidian>(48, 1200, 1300);
+                    roundModel.AddBloonGroup<Obsidian>(64, 1200, 1300);
 
                     roundModel.AddBloonGroup(BloonType.CeramicFortified, 32, 2200, 2300);
-                    roundModel.AddBloonGroup<ObsidianFortified>(48, 2200, 2300);
+                    roundModel.AddBloonGroup<ObsidianFortified>(64, 2200, 2300);
                     break;
                 case 63:
+                    roundModel.AddBloonGroup(BloonType.BfbFortified, 1, 0, 0);
+                    roundModel.AddBloonGroup(BloonType.Bfb, 1, 333, 333);
+                    roundModel.AddBloonGroup(BloonType.Bfb, 1, 666, 666);
                     break;
                 case 64:
+                    roundModel.AddBloonGroup(BloonType.BfbFortified, 1, 0, 0);
+                    roundModel.AddBloonGroup(BloonType.MoabFortified, 8, 600, 1000);
                     break;
                 case 65:
                     break;
@@ -356,6 +361,19 @@ namespace MoarBloons
                 case 67:
                     break;
                 case 68:
+                    roundModel.AddBloonGroup(BloonType.RedRegrowCamo, 2300 * 3, 0, 2300);
+
+                    roundModel.AddBloonGroup(BloonType.White, 128 * 3, 0, 100);
+                    roundModel.AddBloonGroup(BloonType.Rainbow, 128 * 3, 0, 100);
+                    roundModel.AddBloonGroup<Trans>(128*3, 0, 100);
+
+                    roundModel.AddBloonGroup(BloonType.White, 128 * 3, 1200, 1300);
+                    roundModel.AddBloonGroup(BloonType.Rainbow, 128 * 3, 1200, 1300);
+                    roundModel.AddBloonGroup<Trans>(128 * 3, 1200, 1300);
+
+                    roundModel.AddBloonGroup(BloonType.White, 256 * 3, 2200, 2300);
+                    roundModel.AddBloonGroup(BloonType.Rainbow, 256 * 3, 2200, 2300);
+                    roundModel.AddBloonGroup<Trans>(256 * 3, 2200, 2300);
                     break;
                 case 69:
                     break;
@@ -433,7 +451,7 @@ namespace MoarBloons
                     roundModel.AddBloonGroup<MosaicCamoRegrow>(250, 250, 1250);
                     //LMAO and Ddt
                     roundModel.AddBloonGroup(BloonType.Ddt, 15, 900, 2000);
-                    roundModel.AddBloonGroup<LmaoFortified>(15, 900, 2000);
+                    roundModel.AddBloonGroup<LmaoFortified>(10, 900, 2000);
                     //Moab Final Rush
                     roundModel.AddBloonGroup(BloonType.MoabFortified, 15, 2000, 2600);
                     break;
