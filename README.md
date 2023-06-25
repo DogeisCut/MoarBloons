@@ -54,7 +54,7 @@ Hopefully future testing and learning will help me complete this mod.
 
 <p>
     <img align="left" alt="" height="90" src="Assets/Lmao.png"><br>
-    <h3 align="center">LMAO Bloon</h3>
+    <h3 align="center">LMAO (Lethal Military Airship of Oblivion) Bloon</h3>
     A MOAB class bloon with double the HP of a MOAB. It also has purple and zebra properties! Pops into several things I can't remember right now.
 </p><br>
 
